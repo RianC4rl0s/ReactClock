@@ -1,23 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
 
+import './App.css';
+import MainTitle from './components/MainTitle';
+import Clock from './components/Clock/Clock'
+import CountdownTimer from './components/CountdownTimer/CountdownTimer';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <MainTitle main_title="LifeCycle"></MainTitle>
+      <h3> Exemplo de relogio que o proprio react usa de exemplo</h3>
+      <Clock></Clock>
+      <h3>Meu componente inspirado no exemplos</h3>
+      <CountdownTimer seconds={5} ></CountdownTimer>
     </div>
   );
 }

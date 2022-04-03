@@ -1,38 +1,31 @@
-.App {
+@font-face {
+  font-family: "Alarm";
+  src: url("./addons/fonts/alarm_clock.ttf") format('truetype');
+}
+
+#root {
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+  background-color: #28361e;
+  color: #F2C53D;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.watch {
+  font-family: "Alarm", Helvetica, sans-serif,Arial;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgb(41, 54, 48);
+  width: 200px;
+  height: 50px;
+  border-radius: 8px;
+  text-align: center;
+  font-size: 40px;
+  color: red;
+  border:1px #fcfff0 solid;
+  box-shadow: 2px 2px 2px #486335;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.highlight{
+  color: red;
 }
